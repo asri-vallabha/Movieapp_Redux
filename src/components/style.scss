@@ -1,0 +1,119 @@
+@import "mixins";
+.Container{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            background-image: url(https://st1.bgr.in/wp-content/uploads/2022/04/Untitled-design-2022-04-20T095244.884.jpg);
+            width:100wh;
+            height: 100vh;
+            position: fixed;
+            width: 100%;
+            
+    .ContainerMovieList{
+        .MovieCard{
+            @include grid(4,3% );
+            color: black;
+        }
+        .NotFound{
+            border-radius: 10px;
+            text-align: start;
+            justify-content: center;
+            background: linear-gradient(to top, transparent 10%, rgb(255, 43, 43) 110%);
+            padding: 10px 10px;
+            color: rgb(199, 199, 199);
+        }
+        .MoviesList{
+        border: 5px solid white;
+        background: linear-gradient(to top, transparent 0%, rgb(255, 255, 255) 90%);
+        border-radius: 10px;
+        width: 160vh;
+        height: 95vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: scroll;
+
+        input{
+            margin-bottom: 10px;
+            display: flex;
+            align-items: flex-start;
+            background-color: white;
+            border-color: red;
+            border-radius: 10px;
+            height: 40px;
+
+            &::placeholder{
+                color:rgb(8, 6, 6);
+            }
+
+        }
+        }
+
+    }
+    .ContainerMovieForm{
+        background:  linear-gradient(to top, transparent 0%, rgb(255, 43, 43) 110%);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        padding: 10px 10px;
+        overflow: hidden;
+        
+        .completeForm{
+            h3{
+                text-align: center;
+                width:150px;
+                font-size: 30px;
+                font-weight: 500;
+                color: rgb(199, 199, 199);
+            }
+            form{
+                width: 250px;
+                height: 300px;
+                padding: 30px;
+                border-radius: 5px;
+                background-color:white;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                .input{
+                    input{
+                        
+                        background-color: white;
+                        border-color: red;
+                        border-radius: 10px;
+                        height: 40px;
+                        margin-top: 10px;
+            
+                        &::placeholder{
+                            color:rgb(8, 6, 6);
+                        }
+
+                    }
+                    
+    
+                }
+                .button{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    button{
+                        background-color:red;
+                        border: none;
+                        color:white;
+                        border-radius: 5px;
+                        padding: 5px 15px;
+                        font-size: 16px;
+                        font-weight: 500;
+                        margin-top: 10px;
+                        cursor: pointer;
+
+                    }
+                    
+                }
+        }
+
+    }
+  }
+}

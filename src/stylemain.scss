@@ -1,0 +1,19 @@
+.App{
+    background-color: #0b0b0b;
+    height: 100vh;
+    width: 100wh;
+    overflow: scroll;
+    .img1{
+        position:fixed;
+        width: 350px;
+        height: 100px;
+        top:0;
+        z-index: 999;
+        background: linear-gradient(to top, transparent 0%, rgb(0,0,0,0.3) 50%);
+        &.scrolled{
+            
+            background-color: var(--main-color);
+        }
+    
+       }
+    }
